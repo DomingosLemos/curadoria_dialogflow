@@ -88,12 +88,3 @@ def main(argv):
 if __name__ == "__main__":
    main(sys.argv[1:])
 
-
-
-'''
-Como extrair logs do DialogFlow para CSV
-
-Vida pessoal!
-
-Acredito que muitos de vocês tenham a necessidade de criar métricas dos vossos projetos
-'''
