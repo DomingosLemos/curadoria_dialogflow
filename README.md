@@ -39,7 +39,7 @@ Deverá copiar o seu ficheiro JSON recolhido na etapa anterior para a pasta que 
 
 Deverá abrir uma linha de comando/terminal (no caso do windows é digitar CMD botão Start do Windows). Ir para a pasta criada (cd /sua_path/).<br>
 
-Para executar esta parte, basta executar o comando:<br>
+Para executar esta o código de tratamento do log, basta executar o comando:<br>
 
 > python curadiria.py -i <inputfile> -o <outputfile>
 
@@ -47,7 +47,7 @@ onde <inputfile> deverá ser substituído pelo nome do ficheiro JSON e <outputfi
 
 No final e caso tudo tenha corrido bem, irá encontrar o seu ficheiro CSV na pasta de projeto.<br>
 
-É possível que ao executar o projeto tenha erro falta de bibliotecas. Se isso acontecer deverá instalar a ou as bibliotecas em falta com o comando no terminal<br>
+É possível que ao executar o projeto tenha algum erro por falta de bibliotecas. Se isso acontecer deverá instalar a ou as bibliotecas em falta com o comando no terminal:<br>
 
 > pip install nome_da_biblioteca
 
