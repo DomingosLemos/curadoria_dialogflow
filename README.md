@@ -51,6 +51,16 @@ No final e caso tudo tenha corrido bem, irá encontrar o seu ficheiro CSV na pas
 
 > pip install nome_da_biblioteca
 
+No ficheiro de excel terá os seguintes campos:
+* startTime: inicio do diálogo (um diálogo pode ter várias iterações entre o user e o bot)
+* endTime: fim do diálogo
+* duration: duração (endTime - startTime) em segundos 
+* userQuery: entrada, pode ser a welcome ou dada pelo user
+* response: resposta do bot
+* intent: intent usada para a resposta
+* responseTime: altura em que foi dada a resposta
+* sessionId: id único dentro de um diálogo
+    
 O código é muito simples e está bem comentado. 
 
 
