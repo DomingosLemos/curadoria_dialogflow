@@ -16,7 +16,7 @@ Este projeto está dividido em duas partes:<br>
 A lista de ferramentas usadas neste projeto são otodas open source. Este foi um ponto assente na minha escolha.
 
 * <b>Github</b> e <b>Github Desktop</b>: para gestão do código [github](https://github.com/)<br>
-* <b>Visual Studio IDE</b>: uma ferramenta da Microsoft que ajuda muito na construção do código. [Visaul Studio](https://visualstudio.microsoft.com/)<br>
+* <b>Visual Studio IDE</b>: uma ferramenta da Microsoft que ajuda muito na construção do código. [Visual Studio](https://visualstudio.microsoft.com/)<br>
 * <b>Dialogflow Essencial</b>: para testar a chamada da API em ambiente chatbot [Dialog Flow](https://dialogflow.cloud.google.com/#/)<br>
 * <b>Python</b>: linguagem de programação usada [Python](https://www.python.org/)<br>
 
