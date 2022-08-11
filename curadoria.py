@@ -35,8 +35,11 @@ def processJson(data):
             try:
                 response = interacoes['v2Response']['queryResult']['fulfillmentText'].replace(chr(13), '').replace(chr(10), '').replace(';', '').replace('"', '')
             except:
-                for text, payload in interacoes['v2Response']['queryResult']['fulfillmentMessages'][1].items():
-                    response = str(payload['richContent']).replace(chr(13), '').replace(chr(10), '').replace(';', '').replace('"', '') #.replace(chr(13), '').replace(chr(10), '').replace(';', '') #interacoes['v2Response']['queryResult']['fulfillmentMessages'].replace(chr(13), '').replace(chr(10), '').replace(';', '')
+                for text, payload in interacoes['v2Response']['queryResult']['fulfillmentMessages'][0].items():
+                    try:
+                        response = str(payload['richContent']).replace(chr(13), '').replace(chr(10), '').replace(';', '').replace('"', '') #.replace(chr(13), '').replace(chr(10), '').replace(';', '') #interacoes['v2Response']['queryResult']['fulfillmentMessages'].replace(chr(13), '').replace(chr(10), '').replace(';', '')
+                    except:
+                        response = str(payload['text'][0]).replace(chr(13), '').replace(chr(10), '').replace(';', '').replace('"', '')
                     break
             intent = interacoes['v2Response']['queryResult']['intent']['displayName'].replace(chr(10), '').replace(';', '').replace('"', '')
             responseTime = datetime.strptime(interacoes['responseTime'][0:19], '%Y-%m-%dT%H:%M:%S')
@@ -87,4 +90,5 @@ def main(argv):
 
 if __name__ == "__main__":
    main(sys.argv[1:])
+   #python curadoria.py -i logs_nilse.json -o logs_nilse.csv
 
