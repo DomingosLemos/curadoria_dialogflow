@@ -41,9 +41,9 @@ Deverá abrir uma linha de comando/terminal (no caso do windows é digitar CMD b
 
 Para executar esta o código de tratamento do log, basta executar o comando:<br>
 
-> python curadiria.py -i <inputfile> -o <outputfile>
+> python curadoria.py -i inputfile -o outputfile
 
-onde <inputfile> deverá ser substituído pelo nome do ficheiro JSON e <outputfile> pelo nome do ficheiro CSV <br>
+onde inputfile deverá ser substituído pelo nome do ficheiro JSON e outputfile pelo nome do ficheiro CSV <br>
 
 No final e caso tudo tenha corrido bem, irá encontrar o seu ficheiro CSV na pasta de projeto.<br>
 
